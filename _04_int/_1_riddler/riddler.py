@@ -11,3 +11,23 @@
 * After all the riddles have been asked, tell the user how many they got
   correct
 """
+import turtle
+from tkinter import messagebox, simpledialog, Tk
+if __name__ == '__main__':
+    window = Tk()
+    window.withdraw()
+    ans=input("type something\n")
+    val=0
+    if(ans=="something"):
+        val=val+1
+    ans = input("the answer to the last question was 'something'\n")
+    if (ans == "how did you get this right"):
+        val = val + 1
+    ans = input("I forgot to ask a question in the last one\n")
+    if (ans == "actually how"):
+            val = val + 1
+
+    ans = input("Oops, I did it again\n")
+    if (ans == "bruh"):
+        val = val + 1
+    print("Wow, you only got "+str(val)+" questions right smh")
